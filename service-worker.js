@@ -1,13 +1,13 @@
 const CACHE_HOC = 'hoc-works-cache';
 const urlsToCache = [
-    './',
-    './index.html',
-    './empresa.html',
-    './contato.html',
-    './css/style.css',
-    './js/script.js',
-    './img/icones/icones_png/icone_192.png',
-    './img/icones/icones_png/icone_512.png'
+    '/',
+    '/index.html',
+    '/empresa.html',
+    '/contato.html',
+    '/css/style.css',
+    '/js/script.js',
+    '/img/icones/icones_png/icone_192.png',
+    '/img/icones/icones_png/icone_512.png'
 ];
 
 self.addEventListener("install", (event) => {
@@ -26,5 +26,3 @@ self.addEventListener('fetch', (event) => {
     );
 
 });
-
-
