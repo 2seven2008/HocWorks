@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoc Works - Construindo o amanhã do seu negócio, hoje.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/ícones/icone oficial rosa 1 - revisado.svg" type="image/png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#05001f">
 </head>
-
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html"><img src="img/logo png/logotipo oficial preto - revisado.png" alt="Descrição da imagem"
-                    class="logo"></a>
+            <a href="index.html"><img src="img/logo png/logotipo oficial preto - revisado.png" alt="Descrição da imagem" class="logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html">Principal</a></li>
                 <li><a href="empresa.html">Empresa</a></li>
@@ -28,8 +25,7 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Construindo o amanhã do seu negócio, hoje.</h1>
-                <p>Democratizamos a inovação com ferramentas tecnológicas escaláveis para empresas de todos os portes.
-                </p>
+                <p>Democratizamos a inovação com ferramentas tecnológicas escaláveis para empresas de todos os portes.</p>
                 <a href="contato.html" class="cta-button">Solicite um Orçamento</a>
             </div>
         </section>
@@ -69,15 +65,11 @@
 
     <script src="js/script.js"></script>
     <script>
-        if ('serviceWorker' in navigator) {
+        if('serviceWorker.register' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
-                .then(() => console.log('Service Worker registrado com sucesso!'))
-                .catch(err => console.log('Erro no registro do service Worker:', err));
+            .then(() => console.log('Service Worker registrado com sucesso!'))
+            .catch(err => console.log('Erro no registro do service Worker:', err));
         }
     </script>
 </body>
-
-
 </html>
-
-
