@@ -7,7 +7,7 @@
     <title>Hoc Works - Construindo o amanhã do seu negócio, hoje.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/ícones/icone oficial rosa 1 - revisado.svg" type="image/png">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#05001f">
 </head>
 
@@ -70,7 +70,7 @@
     <script src="js/script.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
+            navigator.serviceWorker.register('/service-worker.js')
                 .then(() => console.log('Service Worker registrado com sucesso!'))
                 .catch(err => console.log('Erro no registro do service Worker:', err));
         }
@@ -79,4 +79,5 @@
 
 
 </html>
+
 
